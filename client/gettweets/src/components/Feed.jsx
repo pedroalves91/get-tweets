@@ -2,14 +2,14 @@ import React, { useState, useEffect } from "react";
 import Form from "./Form";
 import Tweets from "./Tweets";
 
-const Feed = ({ nomee }) => {
+const Feed = () => {
   const [user, setUser] = useState("");
   const [post, setPost] = useState([]);
 
   const fetchData = () => {
-    let nome = localStorage.getItem("username");
-    console.log("fetch " + nome);
-    fetch(`http://localhost:5000/tweets/${nome}`)
+    let name = localStorage.getItem("username");
+    console.log("fetch: " + name);
+    fetch(`http://localhost:5000/tweets/${name}`)
       .then((res) => {
         if (!res.ok) {
           throw Error("Could not fetch data");
@@ -38,7 +38,7 @@ const Feed = ({ nomee }) => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      console.log("intervalo");
+      console.log("time");
       fetchData();
     }, 20000);
     return () => clearInterval(interval);

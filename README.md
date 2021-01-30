@@ -47,4 +47,4 @@ I only manage to test if the Tweets component was rendered and if the input fiel
 #### Client and Server: npm run dev
 
 <img align="center" src="https://raw.githubusercontent.com/pedroalves91/get-tweets/master/1.png?token=AFOHDPB3BQHPOAV2YBIGLZ3ACXGWM" alt="app1" width=550px height=350px/>
-<img align="center" src="https://raw.githubusercontent.com/pedroalves91/get-tweets/master/2.png?token=AFOHDPB3BQHPOAV2YBIGLZ3ACXGWM" alt="app1" width=550px height=350px/>
+<img align="center" src="https://raw.githubusercontent.com/pedroalves91/get-tweets/master/2.png?token=AFOHDPDRCVQWURYPBN6SUPLACXG7Y" alt="app2" width=550px height=350px/>

@@ -1,4 +1,4 @@
-# get-tweets
+# get-tweets - SubVisual Coding Challenge
 Get tweets from the Twitter API from a specific user
 
 # NOTE:

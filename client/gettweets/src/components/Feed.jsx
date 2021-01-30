@@ -43,7 +43,7 @@ const Feed = () => {
     const interval = setInterval(() => {
       console.log("time");
       fetchData();
-    }, 20000);
+    }, 60000);
     return () => clearInterval(interval);
   }, []);
 

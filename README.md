@@ -32,18 +32,6 @@ The resulted arrays is stored using setPost as state.
 
 After this data is stored it is passed via props to the Tweets component.
 To do this, this data is mapped to generate multiple Tweet components.
-{post.map((pst) => (
-  <Tweets
-    data-testid="get-feed"
-    key={pst.id}
-    name={pst.name}
-    user={user}
-    text={pst.text}
-    image={pst.image}
-    ret={pst.ret}
-    fav={pst.fav}
-  />
-))}
 
 # STYLE:
 The style in this app was done only with css and flexbox.
@@ -56,4 +44,4 @@ I only manage to test if the Tweets component was rendered and if the input fiel
 ### From the root directory
 #### Only server side: npm start
 #### Only client side: npm run client
-#### Cliend and Server: npm run dev
+#### Client and Server: npm run dev

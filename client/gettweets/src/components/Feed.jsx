@@ -8,6 +8,9 @@ const Feed = () => {
 
   const fetchData = () => {
     let name = localStorage.getItem("username");
+    if(name === null) {
+      name = "";
+    }
     console.log("fetch: " + name);
     fetch(`http://localhost:5000/tweets/${name}`)
       .then((res) => {

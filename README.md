@@ -1,11 +1,10 @@
-# get-tweets - SubVisual Coding Challenge
+# get-tweets
 Get tweets from the Twitter API from a specific user
 
 # NOTE:
-Starting this react app I started designing the UI, and tried to fetch the endpoints, from the Twitter API, from client side.
-It was giving me a Cross Origin error, I tried to fix it by adding some header parameters to the fetch request, but with no success.
+Starting this react app I tried to fetch the endpoints, from the Twitter API, from client side.
 After some research I came to the conclusion that this API can only be called from server side, so I developed a small server with only one route using node and express.
-The client side with React uses that route to communicate with the server, to this I added "proxy": "http://localhost:5000" to the package.json file in the client/gettweets folder.
+The client side with React uses that route to communicate with the server, to do this I added "proxy": "http://localhost:5000" to the package.json file in the client/gettweets folder.
 
 # SERVER: 
 Is an Express app, that uses the CORS package and listens the 5000 port.
@@ -37,9 +36,6 @@ To do this, this data is mapped to render multiple Tweet components.
 The style in this app was done only with css and flexbox.
 
 # TESTS:
-The automated tests step was not accomplished the way it was supposed to.
-I only manage to test if the Tweets component was rendered and if the input field in the Form component could be updated.
-To run the test files:
 - in client/gettweets directory run: npm test
 
 # HOW TO RUN THE APP:
